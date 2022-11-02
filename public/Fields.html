@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+    
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link rel="stylesheet" href="style.css" />
+    
+    
+  </head>
+  <body>
+    <header class="navBar">
+      <img src="./logopappo.png" width="30%">
+      <nav class="retro">
+        <div class="underline">
+        </div>
+        <div class="underline">
+        </div>
+        <div class="underline">
+        </div>
+        <a class="aNav" onmouseover="ul(0)" href="home.html">Home</a>
+        <a class="aNav" onmouseover="ul(1)" href="Members.html">Members</a>
+        <a class="aNav" onmouseover="ul(2)" href="Fields.html">Fields</a>
+        <a class="aNav" onmouseover="ul(3)" href="About.html">About</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-2 w-70">
+          <h1 class="display-5 fw-bold mb-3">Field Reservation</h1>
+          <div class="container d-flex flex-column">
+            
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">#</span>
+              </div>
+              <input type="number" id="rPlayerID" class="form-control" placeholder="Enter your player's id" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <input type="text" class="form-control mb-3" id="rLastname" placeholder="Enter user last name" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control mb-3" id="rFirstname" placeholder="Enter user first name" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" class="form-control mb-3" id="rDate" placeholder="Enter the Date" aria-label="Username" aria-describedby="basic-addon1">
+          
+          <select class="form-select mb-3" name="request" id="request" style="margin-top: 10%">
+              <option value="createReservation">Book a field</option>
+              <option value="readReservation">Check a reservation</option>
+          </select>
+        
+          <button class="btn btn-dark btn-lg"
+          style="margin-bottom: 5%"
+          class="buttonClass"
+          id="fetchButton"
+          onclick="executeFunction()"
+          >
+          Go
+          </button>
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <main>
+   
+
+
+<!-- FOOTER -->
+<footer class="container">
+  <p class="float-end"><a href="#" class="btn btn-outline-dark fw-bold">^</a></p>
+  <p>&copy; 2022-2023 PappoCompany, Inc.  By PappoCorp - PappoTechnologies</p>
+</footer>
+</main>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+
+.container{
+    background-color: "blue";
+}
+
+:root {
+	 --underline-height: 0.2em;
+	 --transition-duration: 0.3s;
+}
+
+ nav {
+	 position: relative;
+	 white-space: nowrap;
+	 background: white;
+	 padding: var(--underline-height) 0;
+	 margin:0;
+}
+.navBar{
+    padding: 10px 30px 10px 30px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+ .underline {
+	 display: block;
+	 position: absolute;
+	 z-index: 0;
+	 bottom: 0;
+	 left: 0;
+	 height: var(--underline-height);
+	 width: 25%;
+	 background: black;
+	 pointer-events: none;
+	 mix-blend-mode: multiply;
+	 transition: transform var(--transition-duration) ease-in-out;
+}
+ .underline:nth-child(1) {
+	 background: yellow;
+	 transition: calc(var(--transition-duration) * .8);
+}
+ .underline:nth-child(2) {
+	 background: cyan;
+	 transition: calc(var(--transition-duration) * 1.2);
+}
+ .underline:nth-child(3) {
+	 background: magenta;
+}
+.aNav {
+    z-index: 10;
+    width: 25%;
+    padding: 1em 0;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #111;
+
+}
+.aNav:hover {
+    color: #111;
+
+}
+
+ nav.black .underline {
+	 background: #222;
+	 border-radius: 0.25em;
+	 height: calc(var(--underline-height) / 2);
+	 mix-blend-mode: initial;
+}
+ nav.full {
+	 font-weight: bold;
+	 background: #111;
+	 color: white;
+}
+ nav.full .underline {
+	 height: 100%;
+	 background: gold;
+}
+ nav.retro .underline {
+	 border-radius: 100% 100% 0 0;
+}
+nav.retro .underline:nth-child(3) {
+    background: #170d7c;
+}
+nav.retro .underline:nth-child(2) {
+    background: #fab02c;
+}
+nav.retro .underline:nth-child(1) {
+    background: #fbcc31;
+}
+nav.retro{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+}
+
+ 
